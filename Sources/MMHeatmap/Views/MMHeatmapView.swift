@@ -60,15 +60,11 @@ public struct MMHeatmapView: View {
     public var body: some View {
         HStack(alignment:.bottom){
             VStack{
-                Text(style.week[0])
-                    .font(.system(size: layout.mmLabelHeight))
-                    .foregroundColor(Color(UIColor.systemRed))
+                Text(style.week[0]).font(.system(size: layout.mmLabelHeight))
                 Spacer()
                 Text(style.week[3]).font(.system(size: layout.mmLabelHeight))
                 Spacer()
-                Text(style.week[6])
-                    .font(.system(size: layout.mmLabelHeight))
-                    .foregroundColor(Color(UIColor.systemBlue))
+                Text(style.week[6]).font(.system(size: layout.mmLabelHeight))
             }.frame(height: layout.columnHeight).layoutPriority(1)
             HStack(alignment:.bottom,spacing: 0){
                 ForEach( MM ..< (MM + range),id:\.self){
