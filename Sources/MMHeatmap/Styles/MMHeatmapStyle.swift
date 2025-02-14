@@ -8,7 +8,7 @@
 import SwiftUI
 public class MMHeatmapStyle:ObservableObject{
     public init(baseCellColor:UIColor,
-                minCellColor:UIColor = UIColor.secondarySystemBackground,
+                minCellColor:UIColor = UIColor.darkGray,
                 week:[String] = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],
                 dateMMFormat:String = "MMM",
                 clippedWithEndDate:Bool = true,
