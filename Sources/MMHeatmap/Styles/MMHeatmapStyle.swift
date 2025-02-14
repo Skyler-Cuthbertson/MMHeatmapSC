@@ -10,7 +10,7 @@ public class MMHeatmapStyle:ObservableObject{
     public init(baseCellColor:UIColor,
                 minCellColor:UIColor = UIColor.darkGray,
                 week:[String] = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],
-                dateMMFormat:String = "MMM",
+                dateMMFormat:String = "MMM 'YY",
                 clippedWithEndDate:Bool = true,
                 isScroll:Bool = true) {
         self.minCellColor = minCellColor
